@@ -6,6 +6,9 @@ public class ConversionUtility {
     }
 
     public static double kilometerConverter(double centimeter) {
+        if (centimeter < 0) {
+            throw new IllegalArgumentException("must positive");
+        }
         return centimeter / 100000;
     }
 
