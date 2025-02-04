@@ -13,7 +13,7 @@ public class Main {
         System.out.println(centimeter + " Centimeter = " + ConversionUtility.kilometerConverter(centimeter) + "km");
         int number = 4;
         System.out.print(number + " is even = " + ConversionUtility.isEven(number) + "\n");
-        System.out.print(StringUtility.deleteWord("Hello World", "wld") + "\n");
-        System.out.print(StringUtility.isPalindrome("rumah"));
+        System.out.print(StringUtility.deleteWord("", "wld") + "\n");
+        System.out.print(StringUtility.isPalindrome(""));
     }
 }
