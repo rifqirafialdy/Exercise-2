@@ -1,17 +1,16 @@
 package org.Rifqi;
 
+import org.Rifqi.Entity.ConversionUtility;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        double fahrenheit = 10;
+        System.out.println("Fahrenheit " + fahrenheit + " = Celcius " + ConversionUtility.celciusConverter(fahrenheit));
+        double centimeter = 20000000;
+        System.out.println(centimeter + " Centimeter = " + ConversionUtility.kilometerConverter(centimeter) + "km");
+        int number = 4;
+        System.out.print(number + " is even = " + ConversionUtility.isEven(number));
     }
 }
